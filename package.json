@@ -1,0 +1,21 @@
+{
+  "name": "sunny",
+  "version": "0.1.0",
+  "description": "Custom cloud serving",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "serve-index": "^1.7.3",
+    "serve-static": "^1.10.2"
+  }
+}
