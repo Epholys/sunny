@@ -2,10 +2,9 @@ var express       = require('express'),
     serveStatic   = require('serve-static'),
     serveIndex    = require('serve-index'),
     session       = require('express-session'),
-    cookieParser  = require('cookie-parser'),
     bodyParser    = require('body-parser'),
     logger        = require('morgan');
-    
+
 
 var passport      = require('passport');
 require('./passport.js')(passport);
@@ -33,7 +32,6 @@ function isLoggedIn(req, res, next) {
 }
 
 app.use(logger('common'));
-app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(session(conf.sess)),
 app.use(passport.initialize());
