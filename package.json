@@ -1,19 +1,20 @@
 {
   "name": "sunny",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A secured single-user personal cloud app in node.js",
   "main": "app.js",
   "dependencies": {
     "bcrypt": "^0.8.6",
     "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.1",
-    "express-session": "^1.13.0",
     "express": "^4.13.4",
+    "express-session": "^1.13.0",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "passport-totp": "0.0.2",
     "serve-index": "^1.7.3",
-    "serve-static": "^1.10.2"
+    "serve-static": "^1.10.2",
+    "thirty-two": "^1.0.2"
   },
   "devDependencies": {},
   "scripts": {

@@ -12,3 +12,7 @@ A secured single-user personal cloud app in node.js
 * Run with ```node app.js```
 * Profits!
 
+## Thanks
+
+https://github.com/auth0-blog/mfa-and-microservices-blog-samples/blob/master/twofa/backend/app.js
+https://github.com/jaredhanson/passport-totp

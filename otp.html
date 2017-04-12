@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>OTP Authentication</title>
+    <style>
+      body {
+        margin: 0px;
+        font-family: monospace;
+        background: radial-gradient(circle at 10% 10%, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) no-repeat center center fixed;
+        font-size: 150%;
+        color: #222222;
+      }
+
+      input {
+        background: rgba(255, 255, 255, 0.5);
+        border: 2px solid;
+        border-radius: 8px;
+        padding: 1%;
+        font-size: 120%;
+        font-weight: bold;
+        color: #444444;
+      }
+
+      .elem {
+        margin: 2%;
+      }
+
+      #login {
+        text-align: center;
+        margin: auto;
+        margin-top: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/login-otp" method="post" id="login">
+      <div class="elem">
+        <h1>Please authenticate with TOTP algorithm</h1>
+      </div>
+      <div class="elem">
+        <label>Code:</label>
+        <input type="text" name="code"/>
+      </div>
+      <div class="elem">
+        <input type="submit" value="Confirm"/>
+      </div>
+    </form>
+  </body>
+</html>

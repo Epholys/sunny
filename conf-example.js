@@ -21,7 +21,8 @@ module.exports = {
 
     user: {
         username: 'yourUsername',
-        hashed_passwd: 'Hashed Password' /* This string must be your password hashed by bcrypt */
+        hashed_passwd: 'Hashed Password', /* This string must be your password hashed by bcrypt */
+	    key: 'Base32 Encoded OTP Key'     /* Secret OTP key base32 encoded */
     }
     
 }
